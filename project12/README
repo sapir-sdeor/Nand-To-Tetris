@@ -1,0 +1,28 @@
+sapir.sdeor,rotem.badash
+===============================================================================
+Sapir Sdeor, ID 206913725, sapir.sdeor@mail.huji.ac.il
+Rotem Badash, ID 314618794, rotem.badash@mail.huji.ac.il
+===============================================================================
+
+                           Project 12 - The Operating System
+                           ---------------------------------
+
+## Submitted Files
+- README: This file.
+- Array.jack: Represents an array
+- Keyboard.jack: A library for handling user input from the keyboard.
+- Math.jack: A library of commonly used mathematical functions.
+- Memory.jack: A library that provides two services: direct access to the computer's main memory (RAM), and allocation and recycling of memory blocks.
+- Output.jack: A library of functions for writing text on the screen.
+- Screen.jack: A library of functions for displaying graphics on the screen.
+- String.jack: Represents character strings.
+- Sys.jack: A library that supports various program execution services.
+
+## Remarks
+- We added to the classes Math.jack, Output.jack, Screen.jack a static array that saves
+the powers of 2 (from 0 to 15). We use this array in the function bit that returns true if the i'th bit of x is 1, otherwise returns false.
+- In Screen,jack we divided th drawLine function to the different kinds of lines.
+In addition, we added a shiftRight and shiftLeft functions to help us calculate division and multiplication by powers of 2.
+- In Output.jack we added the function intLength - calculates the number of digits of the given number.
+- In String.jack we added a function intToString that returns a string with the number recieved.
+

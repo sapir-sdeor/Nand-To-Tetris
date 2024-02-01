@@ -1,0 +1,31 @@
+sapir.sdeor,rotem.badash
+===============================================================================
+Sapir Sdeor, ID 206913725, sapir.sdeor@mail.huji.ac.il
+Rotem Badash, ID 314618794, rotem.badash@mail.huji.ac.il
+===============================================================================
+
+                           Project 11 - Compilation, Continued
+                           -----------------------------------
+  
+
+Submitted Files
+---------------
+README - This file.
+JackCompiler - The executable.
+Makefile - A makefile for the project.
+JackCompiler.py - Creates a vm file to each jack file with the correct translation.
+JackTokenizer.py - Removes all comments from the input stream and breaks it
+    		into Jack language tokens, as specified by the Jack grammar.
+CompilationEngine.py - Gets input file and translates its parsed code to an
+    			output file using the VMTranslator.
+VMWriter.py - Writes the code to the output file.
+SymbolTable.py - Incharge of the symbol table to the class and to each subroutine.
+
+
+Remarks
+-------
+We added functions in the CompilationEngine file to seperate code that is 
+repeated in many of the original functions.
+Furtheremore, we added a function to the JackTokenizer file to help handle
+the comments in the input file.
+Also, in the SymbolTable file we added a function to restart the subroutine symbol table.

@@ -1,0 +1,28 @@
+// This file is part of nand2tetris, as taught in The Hebrew University,
+// and was written by Aviv Yaish, and is published under the Creative 
+// Common Attribution-NonCommercial-ShareAlike 3.0 Unported License 
+// https://creativecommons.org/licenses/by-nc-sa/3.0/
+
+CHIP ShiftRight{
+	IN in[16];
+    OUT out[16];
+     
+    PARTS:
+
+	Mux (a=in[0], b=in[1], sel=true, out=out[0]);
+	Mux (a=in[1], b=in[2], sel=true, out=out[1]);
+	Mux (a=in[2], b=in[3], sel=true, out=out[2]);
+	Mux (a=in[3], b=in[4], sel=true, out=out[3]);
+	Mux (a=in[4], b=in[5], sel=true, out=out[4]);
+	Mux (a=in[5], b=in[6], sel=true, out=out[5]);
+	Mux (a=in[6], b=in[7], sel=true, out=out[6]);
+	Mux (a=in[7], b=in[8], sel=true, out=out[7]);
+	Mux (a=in[8], b=in[9], sel=true, out=out[8]);
+	Mux (a=in[9], b=in[10], sel=true, out=out[9]);
+	Mux (a=in[10], b=in[11], sel=true, out=out[10]);
+	Mux (a=in[11], b=in[12], sel=true, out=out[11]);
+	Mux (a=in[12], b=in[13], sel=true, out=out[12]);
+	Mux (a=in[13], b=in[14], sel=true, out=out[13]);
+	Mux (a=in[14], b=in[15], sel=true, out=out[14]);
+	Mux (a=in[15], b=in[15], sel=true, out=out[15]);
+}
